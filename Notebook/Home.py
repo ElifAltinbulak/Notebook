@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Sep 28 13:27:21 2023
-
-@author: Elif
-"""
 
 import tkinter as tk
 from tkinter import ttk
