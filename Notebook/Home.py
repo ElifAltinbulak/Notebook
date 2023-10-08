@@ -151,13 +151,13 @@ messageEntry.place(x=50, y=15)
 chat_text = tk.Text(root2, wrap=tk.WORD, state=tk.DISABLED, bg="#fdfaf7", height=10, bd=1)
 chat_text.place(x=27, y=80, width=450, height=390)
 
-# Scrollbar ekleyin
+# Scrollbar 
 scrollbar = tk.Scrollbar(chat_text)
 scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 chat_text.config(state=tk.NORMAL, yscrollcommand=scrollbar.set)
 scrollbar.config(command=chat_text.yview)
 
-# Label oluştur
+# Label 
 line = tk.Frame(master=chatLabel, width=410, height=2, bg="#d0d2be")
 line.place(x=50, y=40)
 
