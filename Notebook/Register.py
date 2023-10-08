@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Sep 28 13:20:35 2023
-
-@author: Elif
-"""
-
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
@@ -37,7 +30,6 @@ def create_account():
             )
             cursor = mydb.cursor()
 
-            # Kullanıcıyı "data" tablosuna ekle
             data_query = "INSERT INTO data (username, name, surname, gender, email, password, phonenumber, city, country) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
             data_values = (
                 username.get(),
@@ -52,7 +44,7 @@ def create_account():
             )
             cursor.execute(data_query, data_values)
 
-            # Yeni kullanıcının ID, kullanıcı adı ve şifresini "user_notes" tablosuna ekle
+            # Yeni kullanıcının ID, kullanıcı adı ve şifresini "user_notes" tablosuna ekle ikinci bir tablo oluşturuldu
             user_notes_query = "INSERT INTO user_notes (username, password) VALUES (%s, %s)"
             user_notes_values = (
                 username.get(),
@@ -72,7 +64,6 @@ def Login_Screen():
     print("Login Ekranı")
     root1.destroy()
     import Login
-#Database oluşturma
 
 root1 = tk.Tk()
 root1.title("Register")
