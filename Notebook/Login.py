@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Sep 28 13:16:47 2023
-
-@author: Elif
-"""
-
 #Login sayfası
 import random
 import time
@@ -130,6 +123,7 @@ twitter_button = Button(master=alabel, text="Twitter", image=twitter_image, comm
 twitter_button.photo = twitter_image  
 twitter_button.place(x=233, y=8)
 
+#şifreyi gör ya da görme kısmı
 eye_image_open = PhotoImage(master=signLabel, file="openeye.png")
 eye_image_close = PhotoImage(master=signLabel, file="closeye.png")
 
